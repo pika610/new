@@ -1,0 +1,52 @@
+a{
+  text-decoration: none;
+  color: white;
+  background: rgba(29,171,209,1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 84px 30px;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  border-radius: 50%;
+  animation: animate 2s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    box-shadow: 0 0 0 0 rgba(29,171,209,0.6), 0 0 0 0 rgba(29,171,209,0.6);
+  }
+  30%{
+    box-shadow: 0 0 0 50px rgba(29,171,209,0), 0 0 0 0 rgba(29,171,209,0.6);
+  }
+  65%{
+    box-shadow: 0 0 0 50px rgba(29,171,209,0), 0 0 0 30px rgba(29,171,209,0);
+  }
+  100%{
+    box-shadow: 0 0 0 0 rgba(29,171,209,0), 0 0 0 30px rgba(29,171,209,0);
+  }
+}
+
+
+
+@font-face {
+  
+  font-family: 'Monoton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Monoton'), local('Monoton-Regular'), url(https://themes.googleusercontent.com/static/fonts/monoton/v4/AKI-lyzyNHXByGHeOcds_w.woff) format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+body {
+  background: radial-gradient(#fec215, #f8a90c);
+}
+
+
